@@ -2,11 +2,20 @@
   "company": {
     "name": "ZSM Transport Agency",
     "nameBn": "জেড এস এম ট্রান্সপোর্ট এজেন্সী",
-    "slogan": "Carrying Contractor",
-    "sloganBn": "ক্যারিয়িং কন্ট্রাক্টর",
+    "slogan": "Covered Van Transport Owner",
+    "sloganBn": "কভার্ড ভ্যান পরিবহন মালিক",
     "owner": "Z. M. Masum",
     "tradeLicense": "TRAD/NCC/0000769/2025",
     "establishedYear": "2025"
+  },
+  "proprietor": {
+    "name": "ZM Masum",
+    "nameBn": "জেড. এম. মাসুম",
+    "designation": "Chief Executive Officer (CEO)",
+    "designationBn": "প্রধান নির্বাহী কর্মকর্তা (সিইও)",
+    "image": "/images/proprietor.jpg",
+    "bio": "Founder and CEO of ZSM Transport Agency, Z. M. Masum established the company with a vision to provide reliable and professional covered van transport services across Bangladesh. As the owner and operator, he personally oversees every delivery commitment — ensuring clients always receive the highest standard of service.",
+    "bioBn": "জেড এস এম ট্রান্সপোর্ট এজেন্সীর প্রতিষ্ঠাতা ও প্রধান নির্বাহী কর্মকর্তা জেড. এম. মাসুম সারাবাংলাদেশে নির্ভরযোগ্য ও পেশাদার কভার্ড ভ্যান পরিবহন সেবা প্রদানের লক্ষ্য নিয়ে প্রতিষ্ঠানটি প্রতিষ্ঠা করেছেন। মালিক ও পরিচালক হিসেবে তিনি প্রতিটি ডেলিভারি প্রতিশ্রুতি ব্যক্তিগতভাবে তদারকি করেন — নিশ্চিত করেন যে গ্রাহকরা সর্বদা সর্বোচ্চ মানের সেবা পান।"
   },
   "contact": {
     "phonePrimary": "01922552100",
@@ -25,14 +34,12 @@
   ],
   "social": {
     "facebook": "https://www.facebook.com/zsmtransportagency",
-    "youtube": "https://www.youtube.com/",
-    "linkedin": "https://www.linkedin.com/",
+    "google": "",
     "whatsapp": "https://wa.me/8801922552100"
   },
   "nav": [
     { "id": "home", "label": "Home", "labelBn": "হোম" },
     { "id": "services", "label": "Services", "labelBn": "সেবাসমূহ" },
-    { "id": "fleet", "label": "Fleet", "labelBn": "যানবাহন" },
     { "id": "about", "label": "About", "labelBn": "আমাদের সম্পর্কে" },
     { "id": "process", "label": "Process", "labelBn": "প্রক্রিয়া" },
     { "id": "contact", "label": "Contact", "labelBn": "যোগাযোগ" }
@@ -40,75 +47,70 @@
   "hero": {
     "slides": [
       {
-        "image": "/images/hero-1.svg",
+        "image": "/images/hero-van-1.jpg",
         "title": "Reliable Transport Across Bangladesh",
         "titleBn": "সারা বাংলাদেশে নির্ভরযোগ্য পরিবহন",
-        "subtitle": "Covered van & truck logistics support for businesses and individuals — on time, every time.",
-        "subtitleBn": "ব্যবসা ও ব্যক্তির জন্য কভার্ড ভ্যান ও ট্রাক লজিস্টিক সাপোর্ট — সময়মতো, প্রতিবার।"
+        "subtitle": "Owner-operated covered van logistics — delivering your cargo safely, on time, every time.",
+        "subtitleBn": "মালিক-পরিচালিত কভার্ড ভ্যান লজিস্টিক — আপনার পণ্য নিরাপদে, সময়মতো পৌঁছে দিই।"
       },
       {
-        "image": "/images/hero-2.svg",
+        "image": "/images/hero-van-2.jpg",
         "title": "Your Cargo, Our Responsibility",
         "titleBn": "আপনার পণ্য, আমাদের দায়িত্ব",
-        "subtitle": "A dedicated fleet of covered vans and trucks ready to move your goods nationwide.",
-        "subtitleBn": "সারাদেশে আপনার পণ্য পরিবহনের জন্য প্রস্তুত কভার্ড ভ্যান ও ট্রাকের বহর।"
+        "subtitle": "A dedicated fleet of owner-operated covered vans ready to move your goods nationwide.",
+        "subtitleBn": "সারাদেশে আপনার পণ্য পরিবহনের জন্য প্রস্তুত মালিক-পরিচালিত কভার্ড ভ্যান বহর।"
       },
       {
-        "image": "/images/hero-3.svg",
+        "image": "/images/hero-van-3.jpg",
         "title": "Warehouse to Doorstep Delivery",
         "titleBn": "গুদাম থেকে দোরগোড়ায় ডেলিভারি",
-        "subtitle": "Complete carrying contractor service with safe loading, transport, and handover.",
-        "subtitleBn": "নিরাপদ লোডিং, পরিবহন ও হস্তান্তর সহ সম্পূর্ণ ক্যারিয়িং কন্ট্রাক্টর সেবা।"
+        "subtitle": "Owner-operated covered van transport with safe loading, secure transit, and professional handover.",
+        "subtitleBn": "নিরাপদ লোডিং, সুরক্ষিত পরিবহন ও পেশাদার হস্তান্তর সহ মালিক-পরিচালিত কভার্ড ভ্যান সেবা।"
       }
     ]
   },
   "services": [
     {
-      "icon": "truck",
-      "title": "Truck Transport",
-      "titleBn": "ট্রাক পরিবহন",
-      "desc": "Heavy-duty trucks for bulk goods movement across all districts of Bangladesh.",
-      "descBn": "বাংলাদেশের সকল জেলায় বাল্ক পণ্য পরিবহনের জন্য হেভি-ডিউটি ট্রাক।"
-    },
-    {
       "icon": "box",
-      "title": "Covered Van & Cargo",
-      "titleBn": "কভার্ড ভ্যান ও কার্গো",
-      "desc": "Weather-protected covered vans keeping your cargo safe from dust and rain.",
-      "descBn": "ধুলা ও বৃষ্টি থেকে পণ্য রক্ষাকারী আবহাওয়া-নিরোধক কভার্ড ভ্যান।"
+      "title": "Covered Van Transport",
+      "titleBn": "কভার্ড ভ্যান পরিবহন",
+      "desc": "Weather-protected covered vans keeping your cargo safe from dust, rain, and damage during transit.",
+      "descBn": "ধুলা, বৃষ্টি ও ক্ষতি থেকে পণ্য রক্ষাকারী আবহাওয়া-নিরোধক কভার্ড ভ্যান পরিবহন।"
     },
     {
       "icon": "warehouse",
-      "title": "Warehouse Support",
-      "titleBn": "গুদাম সহায়তা",
-      "desc": "Short-term storage and loading/unloading support for your logistics needs.",
-      "descBn": "আপনার লজিস্টিক প্রয়োজনে স্বল্পমেয়াদী সংরক্ষণ ও লোডিং সহায়তা।"
+      "title": "Loading & Unloading",
+      "titleBn": "লোডিং ও আনলোডিং",
+      "desc": "Professional loading and unloading support, ensuring safe handling of goods at every step.",
+      "descBn": "পণ্যের নিরাপদ ব্যবস্থাপনা নিশ্চিত করতে পেশাদার লোডিং ও আনলোডিং সহায়তা।"
+    },
+    {
+      "icon": "truck",
+      "title": "Nationwide Delivery",
+      "titleBn": "সারাদেশ ডেলিভারি",
+      "desc": "Comprehensive covered van delivery service reaching all 64 districts across Bangladesh.",
+      "descBn": "বাংলাদেশের সকল ৬৪ জেলায় পৌঁছানো সম্পূর্ণ কভার্ড ভ্যান ডেলিভারি সেবা।"
     },
     {
       "icon": "bolt",
       "title": "Express Delivery",
       "titleBn": "এক্সপ্রেস ডেলিভারি",
-      "desc": "Time-critical shipments delivered fast with priority handling and tracking.",
-      "descBn": "অগ্রাধিকার ব্যবস্থাপনা ও ট্র্যাকিং সহ দ্রুততম সময়ে জরুরি চালান ডেলিভারি।"
+      "desc": "Time-critical shipments delivered fast with priority handling and direct-route transport.",
+      "descBn": "অগ্রাধিকার ব্যবস্থাপনা ও সরাসরি রুটে দ্রুততম সময়ে জরুরি চালান ডেলিভারি।"
     }
   ],
   "whyChooseUs": [
     { "icon": "support", "title": "24/7 Support", "titleBn": "২৪/৭ সহায়তা", "desc": "Round-the-clock assistance whenever you need us.", "descBn": "যেকোনো সময় চব্বিশ ঘণ্টা সহায়তা।" },
     { "icon": "map", "title": "Nationwide Coverage", "titleBn": "সারাদেশে কভারেজ", "desc": "We deliver to every corner of Bangladesh.", "descBn": "বাংলাদেশের প্রতিটি কোণায় আমরা পৌঁছে দিই।" },
     { "icon": "gps", "title": "GPS Tracking", "titleBn": "জিপিএস ট্র্যাকিং", "desc": "Track your shipment in real-time, anytime.", "descBn": "যেকোনো সময় রিয়েল-টাইমে আপনার চালান ট্র্যাক করুন।" },
-    { "icon": "clock", "title": "On-time Delivery", "titleBn": "সময়মতো ডেলিভারি", "desc": "We respect deadlines and deliver as promised.", "descBn": "আমরা সময়সীমার প্রতি যত্নশীল ও প্রতিশ্রুতি অনুযায়ী পৌঁছে দিই।" }
-  ],
-  "fleet": [
-    { "image": "/images/fleet-covered-van.svg", "name": "Covered Van", "nameBn": "কভার্ড ভ্যান", "capacity": "Up to 3 Ton", "capacityBn": "৩ টন পর্যন্ত", "feature": "Fully enclosed, weatherproof", "featureBn": "সম্পূর্ণ আবদ্ধ, আবহাওয়া-নিরোধক" },
-    { "image": "/images/fleet-large-truck.svg", "name": "Large Truck", "nameBn": "বড় ট্রাক", "capacity": "Up to 10 Ton", "capacityBn": "১০ টন পর্যন্ত", "feature": "Heavy bulk cargo", "featureBn": "ভারী বাল্ক কার্গো" },
-    { "image": "/images/fleet-mini-truck.svg", "name": "Mini Truck", "nameBn": "মিনি ট্রাক", "capacity": "Up to 1.5 Ton", "capacityBn": "১.৫ টন পর্যন্ত", "feature": "City & short routes", "featureBn": "শহর ও স্বল্প দূরত্ব" },
-    { "image": "/images/fleet-pickup.svg", "name": "Pickup", "nameBn": "পিকআপ", "capacity": "Up to 1 Ton", "capacityBn": "১ টন পর্যন্ত", "feature": "Quick small loads", "featureBn": "দ্রুত ছোট চালান" }
+    { "icon": "clock", "title": "On-time Delivery", "titleBn": "সময়মতো ডেলিভারি", "desc": "We respect deadlines and deliver as promised.", "descBn": "আমরা সময়সীমার প্রতি যত্নশীল ও প্রতিশ্রুতি অনুযায়ী পৌঁছে দিই।" },
+    { "icon": "truck", "title": "Covered Van Fleet", "titleBn": "কভার্ড ভ্যান বহর", "desc": "Owner-operated covered vans for weather-protected, secure cargo delivery across Bangladesh.", "descBn": "আবহাওয়া-নিরোধক ও নিরাপদ পণ্য ডেলিভারির জন্য মালিক-পরিচালিত কভার্ড ভ্যান বহর।" }
   ],
   "process": [
-    { "step": "01", "title": "Book", "titleBn": "বুকিং", "desc": "Call or fill the quote form to book a vehicle.", "descBn": "গাড়ি বুক করতে কল করুন বা কোটেশন ফর্ম পূরণ করুন।" },
+    { "step": "01", "title": "Book", "titleBn": "বুকিং", "desc": "Call or fill the quote form to book a covered van.", "descBn": "কভার্ড ভ্যান বুক করতে কল করুন বা কোটেশন ফর্ম পূরণ করুন।" },
     { "step": "02", "title": "Pickup", "titleBn": "পিকআপ", "desc": "Our team arrives at your location on schedule.", "descBn": "আমাদের টিম সময়মতো আপনার লোকেশনে পৌঁছায়।" },
-    { "step": "03", "title": "Transport", "titleBn": "পরিবহন", "desc": "Goods carried safely with GPS-tracked vehicles.", "descBn": "জিপিএস-ট্র্যাকড গাড়িতে পণ্য নিরাপদে পরিবহন।" },
-    { "step": "04", "title": "Delivery", "titleBn": "ডেলিভারি", "desc": "On-time handover at the destination.", "descBn": "গন্তব্যে সময়মতো হস্তান্তর।" }
+    { "step": "03", "title": "Transport", "titleBn": "পরিবহন", "desc": "Goods carried safely in GPS-tracked covered vans.", "descBn": "জিপিএস-ট্র্যাকড কভার্ড ভ্যানে পণ্য নিরাপদে পরিবহন।" },
+    { "step": "04", "title": "Delivery", "titleBn": "ডেলিভারি", "desc": "On-time professional handover at the destination.", "descBn": "গন্তব্যে সময়মতো পেশাদার হস্তান্তর।" }
   ],
   "testimonials": [
     { "name": "Rafiqul Islam", "nameBn": "রফিকুল ইসলাম", "role": "Factory Owner, Narayanganj", "roleBn": "কারখানা মালিক, নারায়ণগঞ্জ", "quote": "ZSM has been moving our raw materials for months. Always on time and very professional.", "quoteBn": "জেড এস এম মাসের পর মাস আমাদের কাঁচামাল পরিবহন করছে। সবসময় সময়মতো ও পেশাদার।" },
@@ -116,12 +118,8 @@
     { "name": "Kamal Hossain", "nameBn": "কামাল হোসেন", "role": "Wholesale Distributor", "roleBn": "পাইকারি পরিবেশক", "quote": "Affordable rates and reliable drivers. ZSM is now our default transport partner.", "quoteBn": "সাশ্রয়ী মূল্য ও নির্ভরযোগ্য চালক। জেড এস এম এখন আমাদের প্রধান পরিবহন অংশীদার।" }
   ],
   "clients": [
-    { "name": "Madani Traders", "nameBn": "মাদানী ট্রেডার্স" },
-    { "name": "Siddhirganj Textiles", "nameBn": "সিদ্ধিরগঞ্জ টেক্সটাইল" },
-    { "name": "Doric Industries", "nameBn": "ডরিক ইন্ডাস্ট্রিজ" },
-    { "name": "Padma Distributors", "nameBn": "পদ্মা ডিস্ট্রিবিউটরস" },
-    { "name": "Meghna Foods", "nameBn": "মেঘনা ফুডস" },
-    { "name": "BD Logistics Hub", "nameBn": "বিডি লজিস্টিক হাব" }
+    { "name": "Singer Beko", "nameBn": "সিঙ্গার বেকো", "logo": "/images/client-singer-beko.png" },
+    { "name": "Walton", "nameBn": "ওয়ালটন", "logo": "/images/client-walton.png" }
   ],
   "stats": [
     { "value": "5000+", "label": "Trips Completed", "labelBn": "সম্পন্ন ট্রিপ" },

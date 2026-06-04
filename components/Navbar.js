@@ -25,14 +25,14 @@ export default function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-lg py-2"
+          ? "bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-lg py-2"
           : "bg-transparent py-4"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
         <button onClick={() => goTo("home")} className="flex items-center shrink-0" aria-label="Home">
           <img
-            src={scrolled || theme === "light" ? "/images/logo.svg" : "/images/logo-dark.svg"}
+            src={scrolled && theme !== "dark" ? "/images/logo.svg" : "/images/logo-dark.svg"}
             alt={site.company.name}
             className="h-10 sm:h-11 w-auto"
           />
@@ -43,8 +43,10 @@ export default function Navbar() {
             <button
               key={item.id}
               onClick={() => goTo(item.id)}
-              className={`px-3 py-2 rounded-lg text-sm font-semibold transition-colors hover:text-brand-blueLight ${
-                scrolled ? "text-slate-700 dark:text-slate-200" : "text-white drop-shadow"
+              className={`px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
+                scrolled
+                  ? "text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-brand-blue/10 dark:hover:text-white dark:hover:bg-white/10"
+                  : "text-white hover:text-brand-yellow hover:bg-white/15"
               } ${lang === "bn" ? "font-bangla" : ""}`}
             >
               {tx(item, "label")}

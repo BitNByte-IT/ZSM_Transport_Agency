@@ -15,7 +15,7 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <SectionHeading eyebrow={t("whyChoose")} title={t("whyChoose")} subtitle={t("whyChooseSub")} />
 
-        <div ref={ref} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
           {site.whyChooseUs.map((w, i) => (
             <div
               key={i}

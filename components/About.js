@@ -9,7 +9,7 @@ export default function About() {
   const bn = lang === "bn";
 
   const points = [
-    { en: "Licensed Carrying Contractor", bn: "লাইসেন্সপ্রাপ্ত ক্যারিয়িং কন্ট্রাক্টর" },
+    { en: "Licensed Transport Agency Owner", bn: "লাইসেন্সপ্রাপ্ত পরিবহন এজেন্সী মালিক" },
     { en: "Trade License: " + site.company.tradeLicense, bn: "ট্রেড লাইসেন্স: " + site.company.tradeLicense },
     { en: "Based in Narayanganj, serving nationwide", bn: "নারায়ণগঞ্জ ভিত্তিক, সারাদেশে সেবা" },
     { en: "Transparent pricing & safe handling", bn: "স্বচ্ছ মূল্য ও নিরাপদ ব্যবস্থাপনা" },
@@ -20,7 +20,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 items-center">
         <div ref={ref} className={`transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}>
           <span className={`inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 bg-brand-green/10 text-brand-green dark:bg-brand-greenLight/15 dark:text-brand-greenLight ${bn ? "font-bangla" : ""}`}>
-            {site.company.slogan}
+            {bn ? site.company.sloganBn : site.company.slogan}
           </span>
           <h2 className={`text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-5 ${bn ? "font-bangla" : "font-display"}`}>
             {t("aboutTitle")}
@@ -40,8 +40,18 @@ export default function About() {
         </div>
 
         <div className={`relative transition-all duration-700 delay-150 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}>
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-            <img src="/images/hero-3.svg" alt="ZSM fleet" className="w-full h-full object-cover" />
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] bg-slate-100 dark:bg-slate-800">
+            <img
+              src="/images/hero-van-2.jpg"
+              alt="ZSM covered van fleet"
+              className="w-full h-full object-cover"
+              onError={(e) => { e.target.style.display = "none"; }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/20 to-brand-green/20 flex items-center justify-center">
+              <div className="text-center text-slate-400 dark:text-slate-500">
+                <Icon name="truck" className="w-16 h-16 mx-auto mb-2 opacity-40" />
+              </div>
+            </div>
           </div>
           <div className="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-5 border border-slate-100 dark:border-slate-700">
             <div className="flex items-center gap-3">

@@ -21,6 +21,12 @@ export default function Footer() {
     { href: "/terms-conditions", label: t("termsConditions") },
   ];
 
+  const socialLinks = [
+    { href: site.social.facebook, icon: "facebook", label: "Facebook" },
+    { href: site.social.whatsapp, icon: "whatsapp", label: "WhatsApp" },
+    { href: site.social.google, icon: "google", label: "Google Business" },
+  ];
+
   return (
     <footer className="bg-slate-950 text-slate-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14 grid gap-10 md:grid-cols-3">
@@ -60,30 +66,22 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Right: social + map */}
+        {/* Right: social links */}
         <div className="md:text-right">
           <h4 className={`font-bold text-white mb-4 ${bn ? "font-bangla" : ""}`}>{t("followUs")}</h4>
-          <div className="flex gap-3 md:justify-end mb-5">
-            {[
-              { href: site.social.facebook, icon: "facebook" },
-              { href: site.social.whatsapp, icon: "whatsapp" },
-              { href: site.social.youtube, icon: "youtube" },
-              { href: site.social.linkedin, icon: "linkedin" },
-            ].map((s, i) => (
+          <div className="flex gap-3 md:justify-end">
+            {socialLinks.map((s, i) => (
               <a
                 key={i}
-                href={s.href}
+                href={s.href || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-slate-800 hover:bg-brand-blue text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-110"
-                aria-label={s.icon}
+                aria-label={s.label}
               >
                 <Icon name={s.icon} className="w-5 h-5" />
               </a>
             ))}
-          </div>
-          <div className="rounded-xl overflow-hidden border border-slate-800 h-32 md:ml-auto md:max-w-xs">
-            <iframe src={site.contact.mapEmbed} width="100%" height="100%" style={{ border: 0 }} loading="lazy" title="map" />
           </div>
         </div>
       </div>

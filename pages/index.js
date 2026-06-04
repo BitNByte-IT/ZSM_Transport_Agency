@@ -3,8 +3,8 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import Fleet from "@/components/Fleet";
 import About from "@/components/About";
+import Proprietor from "@/components/Proprietor";
 import Process from "@/components/Process";
 import Testimonials from "@/components/Testimonials";
 import Clients from "@/components/Clients";
@@ -18,18 +18,18 @@ export default function Home() {
     <>
       <Head>
         <title>{site.company.name} — {site.company.slogan}</title>
-        <meta name="description" content="ZSM Transport Agency — reliable covered van & truck logistics support across Bangladesh. Carrying contractor based in Siddhirganj, Narayanganj." />
+        <meta name="description" content="ZSM Transport Agency — reliable owner-operated covered van logistics across Bangladesh. Based in Siddhirganj, Narayanganj." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content={`${site.company.name} — ${site.company.slogan}`} />
-        <meta property="og:description" content="Reliable transport across Bangladesh." />
+        <meta property="og:description" content="Reliable covered van transport across Bangladesh." />
       </Head>
       <Navbar />
       <main>
         <Hero />
         <Services />
         <WhyChooseUs />
-        <Fleet />
         <About />
+        <Proprietor />
         <Process />
         <Testimonials />
         <Clients />

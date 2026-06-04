@@ -8,10 +8,11 @@ import site from "@/data/site.json";
 export default function Contact() {
   const { t, tx, lang } = useApp();
   const [ref, visible] = useReveal();
+  const [mapRef, mapVisible] = useReveal();
   const bn = lang === "bn";
 
   const [form, setForm] = useState({ name: "", phone: "", email: "", service: "", message: "" });
-  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+  const [status, setStatus] = useState("idle");
 
   const onChange = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
 
@@ -40,7 +41,8 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <SectionHeading eyebrow={t("getQuote")} title={t("contactTitle")} subtitle={t("contactSub")} />
 
-        <div ref={ref} className="grid lg:grid-cols-2 gap-8">
+        {/* Form + Info row */}
+        <div ref={ref} className="grid lg:grid-cols-2 gap-8 mb-8">
           {/* Form */}
           <div className={`bg-white dark:bg-slate-800 rounded-3xl shadow-xl p-7 sm:p-9 border border-slate-100 dark:border-slate-700 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <form onSubmit={onSubmit} className="space-y-4">
@@ -75,30 +77,28 @@ export default function Contact() {
             </form>
           </div>
 
-          {/* Info + hours + map */}
-          <div className={`space-y-6 transition-all duration-700 delay-150 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <div className="grid sm:grid-cols-1 gap-3">
-              <a href={`tel:${site.contact.phonePrimary}`} className="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 hover:shadow-md transition">
-                <span className="w-11 h-11 rounded-xl bg-brand-green/15 text-brand-green dark:text-brand-greenLight flex items-center justify-center shrink-0"><Icon name="phone" className="w-5 h-5" /></span>
-                <span>
-                  <span className={`block text-xs text-slate-500 dark:text-slate-400 ${bn ? "font-bangla" : ""}`}>{t("callUs")}</span>
-                  <span className="block font-bold text-slate-900 dark:text-white">{site.contact.phonePrimaryDisplay}, {site.contact.phoneSecondaryDisplay}</span>
-                </span>
-              </a>
-              <a href={`mailto:${site.contact.email}`} className="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 hover:shadow-md transition">
-                <span className="w-11 h-11 rounded-xl bg-brand-blue/15 text-brand-blue dark:text-brand-blueLight flex items-center justify-center shrink-0"><Icon name="mail" className="w-5 h-5" /></span>
-                <span className="min-w-0">
-                  <span className={`block text-xs text-slate-500 dark:text-slate-400 ${bn ? "font-bangla" : ""}`}>{t("emailUs")}</span>
-                  <span className="block font-bold text-slate-900 dark:text-white truncate">{site.contact.email}</span>
-                </span>
-              </a>
-              <div className="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
-                <span className="w-11 h-11 rounded-xl bg-brand-yellow/25 text-brand-yellowDeep flex items-center justify-center shrink-0"><Icon name="pin" className="w-5 h-5" /></span>
-                <span>
-                  <span className={`block text-xs text-slate-500 dark:text-slate-400 ${bn ? "font-bangla" : ""}`}>{t("visitUs")}</span>
-                  <span className={`block font-semibold text-sm text-slate-900 dark:text-white ${bn ? "font-bangla" : ""}`}>{bn ? site.contact.addressBn : site.contact.address}</span>
-                </span>
-              </div>
+          {/* Contact info + working hours */}
+          <div className={`space-y-5 transition-all duration-700 delay-150 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+            <a href={`tel:${site.contact.phonePrimary}`} className="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 hover:shadow-md transition">
+              <span className="w-11 h-11 rounded-xl bg-brand-green/15 text-brand-green dark:text-brand-greenLight flex items-center justify-center shrink-0"><Icon name="phone" className="w-5 h-5" /></span>
+              <span>
+                <span className={`block text-xs text-slate-500 dark:text-slate-400 ${bn ? "font-bangla" : ""}`}>{t("callUs")}</span>
+                <span className="block font-bold text-slate-900 dark:text-white">{site.contact.phonePrimaryDisplay}, {site.contact.phoneSecondaryDisplay}</span>
+              </span>
+            </a>
+            <a href={`mailto:${site.contact.email}`} className="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 hover:shadow-md transition">
+              <span className="w-11 h-11 rounded-xl bg-brand-blue/15 text-brand-blue dark:text-brand-blueLight flex items-center justify-center shrink-0"><Icon name="mail" className="w-5 h-5" /></span>
+              <span className="min-w-0">
+                <span className={`block text-xs text-slate-500 dark:text-slate-400 ${bn ? "font-bangla" : ""}`}>{t("emailUs")}</span>
+                <span className="block font-bold text-slate-900 dark:text-white truncate">{site.contact.email}</span>
+              </span>
+            </a>
+            <div className="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+              <span className="w-11 h-11 rounded-xl bg-brand-yellow/25 text-brand-yellowDeep flex items-center justify-center shrink-0"><Icon name="pin" className="w-5 h-5" /></span>
+              <span>
+                <span className={`block text-xs text-slate-500 dark:text-slate-400 ${bn ? "font-bangla" : ""}`}>{t("visitUs")}</span>
+                <span className={`block font-semibold text-sm text-slate-900 dark:text-white ${bn ? "font-bangla" : ""}`}>{bn ? site.contact.addressBn : site.contact.address}</span>
+              </span>
             </div>
 
             {/* Working hours */}
@@ -115,21 +115,25 @@ export default function Contact() {
                 ))}
               </ul>
             </div>
-
-            {/* Map */}
-            <div className="rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm h-56">
-              <iframe
-                src={site.contact.mapEmbed}
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="ZSM Transport Agency location"
-              />
-            </div>
           </div>
+        </div>
+
+        {/* Full-width map below */}
+        <div
+          ref={mapRef}
+          className={`rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm transition-all duration-700 ${mapVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          style={{ height: "420px" }}
+        >
+          <iframe
+            src={site.contact.mapEmbed}
+            width="100%"
+            height="100%"
+            style={{ border: 0, display: "block" }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="ZSM Transport Agency location"
+          />
         </div>
       </div>
     </section>
