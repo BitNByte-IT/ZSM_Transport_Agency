@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Poppins", "Hind Siliguri", sans-serif;
+  --font-body: "Poppins", "Hind Siliguri", sans-serif;
+  --font-bangla: "Hind Siliguri", "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* custom small sizes for floating buttons */
+.w-13 { width: 3.25rem; }
+.h-13 { height: 3.25rem; }
+
+/* nicer scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #1565C0; border-radius: 8px; }
+.dark ::-webkit-scrollbar-thumb { background: #1E6F3C; }
+
+/* prevent layout shift on theme load */
+.no-transition * { transition: none !important; }

@@ -1,0 +1,39 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E6F3C"/>
+      <stop offset="60%" stop-color="#43A047"/>
+      <stop offset="100%" stop-color="#A5D6A7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky3)"/>
+  <circle cx="320" cy="200" r="130" fill="#FFFFFF" opacity="0.15"/>
+  <!-- warehouse -->
+  <rect x="900" y="380" width="640" height="520" fill="#37474F"/>
+  <path d="M900 380 L1220 280 L1540 380 Z" fill="#263238"/>
+  <g fill="#546E7A">
+    <rect x="950" y="450" width="120" height="160"/>
+    <rect x="1110" y="450" width="120" height="160"/>
+    <rect x="1270" y="450" width="120" height="160"/>
+  </g>
+  <rect x="1010" y="700" width="200" height="200" fill="#FFC107"/>
+  <!-- ground -->
+  <rect x="0" y="760" width="1600" height="140" fill="#1A1A1A"/>
+  <!-- van being loaded -->
+  <g transform="translate(180,500)">
+    <rect x="0" y="40" width="320" height="200" rx="10" fill="#F5F5F5"/>
+    <rect x="0" y="40" width="320" height="200" rx="10" fill="none" stroke="#1565C0" stroke-width="5"/>
+    <rect x="20" y="75" width="280" height="55" fill="#1E6F3C"/>
+    <text x="160" y="200" font-family="Arial" font-weight="800" font-size="44" fill="#0D47A1" text-anchor="middle">ZSM</text>
+    <path d="M320 95 L405 95 L455 160 L455 240 L320 240 Z" fill="#FFC107"/>
+    <rect x="345" y="112" width="75" height="52" rx="4" fill="#0D47A1"/>
+    <circle cx="95" cy="252" r="40" fill="#0A0A0A"/><circle cx="95" cy="252" r="15" fill="#666"/>
+    <circle cx="260" cy="252" r="40" fill="#0A0A0A"/><circle cx="260" cy="252" r="15" fill="#666"/>
+    <circle cx="405" cy="252" r="40" fill="#0A0A0A"/><circle cx="405" cy="252" r="15" fill="#666"/>
+  </g>
+  <!-- boxes -->
+  <g fill="#8D6E63" transform="translate(720,690)">
+    <rect x="0" y="0" width="70" height="70"/><rect x="80" y="0" width="70" height="70"/>
+    <rect x="40" y="-75" width="70" height="70"/>
+  </g>
+</svg>

@@ -1,0 +1,132 @@
+{
+  "company": {
+    "name": "ZSM Transport Agency",
+    "nameBn": "জেড এস এম ট্রান্সপোর্ট এজেন্সী",
+    "slogan": "Carrying Contractor",
+    "sloganBn": "ক্যারিয়িং কন্ট্রাক্টর",
+    "owner": "Z. M. Masum",
+    "tradeLicense": "TRAD/NCC/0000769/2025",
+    "establishedYear": "2025"
+  },
+  "contact": {
+    "phonePrimary": "01922552100",
+    "phonePrimaryDisplay": "01922-552100",
+    "phoneSecondary": "01712607046",
+    "phoneSecondaryDisplay": "01712-607046",
+    "email": "zsmtransportagency@gmail.com",
+    "address": "Shop No. 34, Doric Madani Tower, Madaninagar, Siddhirganj, Narayanganj.",
+    "addressBn": "শপ নং ৩৪, ডরিক মাদানী টাওয়ার, মাদানীনগর, সিদ্ধিরগঞ্জ, নারায়ণগঞ্জ।",
+    "mapEmbed": "https://www.google.com/maps?q=Doric+Madani+Tower+Madaninagar+Siddhirganj+Narayanganj&output=embed"
+  },
+  "workingHours": [
+    { "day": "Saturday - Thursday", "dayBn": "শনিবার - বৃহস্পতিবার", "time": "8:00 AM - 8:00 PM", "timeBn": "সকাল ৮টা - রাত ৮টা" },
+    { "day": "Friday", "dayBn": "শুক্রবার", "time": "Closed (On-call only)", "timeBn": "বন্ধ (শুধু জরুরি কল)" },
+    { "day": "Emergency Support", "dayBn": "জরুরি সহায়তা", "time": "24/7 Available", "timeBn": "২৪/৭ উপলব্ধ" }
+  ],
+  "social": {
+    "facebook": "https://www.facebook.com/zsmtransportagency",
+    "youtube": "https://www.youtube.com/",
+    "linkedin": "https://www.linkedin.com/",
+    "whatsapp": "https://wa.me/8801922552100"
+  },
+  "nav": [
+    { "id": "home", "label": "Home", "labelBn": "হোম" },
+    { "id": "services", "label": "Services", "labelBn": "সেবাসমূহ" },
+    { "id": "fleet", "label": "Fleet", "labelBn": "যানবাহন" },
+    { "id": "about", "label": "About", "labelBn": "আমাদের সম্পর্কে" },
+    { "id": "process", "label": "Process", "labelBn": "প্রক্রিয়া" },
+    { "id": "contact", "label": "Contact", "labelBn": "যোগাযোগ" }
+  ],
+  "hero": {
+    "slides": [
+      {
+        "image": "/images/hero-1.svg",
+        "title": "Reliable Transport Across Bangladesh",
+        "titleBn": "সারা বাংলাদেশে নির্ভরযোগ্য পরিবহন",
+        "subtitle": "Covered van & truck logistics support for businesses and individuals — on time, every time.",
+        "subtitleBn": "ব্যবসা ও ব্যক্তির জন্য কভার্ড ভ্যান ও ট্রাক লজিস্টিক সাপোর্ট — সময়মতো, প্রতিবার।"
+      },
+      {
+        "image": "/images/hero-2.svg",
+        "title": "Your Cargo, Our Responsibility",
+        "titleBn": "আপনার পণ্য, আমাদের দায়িত্ব",
+        "subtitle": "A dedicated fleet of covered vans and trucks ready to move your goods nationwide.",
+        "subtitleBn": "সারাদেশে আপনার পণ্য পরিবহনের জন্য প্রস্তুত কভার্ড ভ্যান ও ট্রাকের বহর।"
+      },
+      {
+        "image": "/images/hero-3.svg",
+        "title": "Warehouse to Doorstep Delivery",
+        "titleBn": "গুদাম থেকে দোরগোড়ায় ডেলিভারি",
+        "subtitle": "Complete carrying contractor service with safe loading, transport, and handover.",
+        "subtitleBn": "নিরাপদ লোডিং, পরিবহন ও হস্তান্তর সহ সম্পূর্ণ ক্যারিয়িং কন্ট্রাক্টর সেবা।"
+      }
+    ]
+  },
+  "services": [
+    {
+      "icon": "truck",
+      "title": "Truck Transport",
+      "titleBn": "ট্রাক পরিবহন",
+      "desc": "Heavy-duty trucks for bulk goods movement across all districts of Bangladesh.",
+      "descBn": "বাংলাদেশের সকল জেলায় বাল্ক পণ্য পরিবহনের জন্য হেভি-ডিউটি ট্রাক।"
+    },
+    {
+      "icon": "box",
+      "title": "Covered Van & Cargo",
+      "titleBn": "কভার্ড ভ্যান ও কার্গো",
+      "desc": "Weather-protected covered vans keeping your cargo safe from dust and rain.",
+      "descBn": "ধুলা ও বৃষ্টি থেকে পণ্য রক্ষাকারী আবহাওয়া-নিরোধক কভার্ড ভ্যান।"
+    },
+    {
+      "icon": "warehouse",
+      "title": "Warehouse Support",
+      "titleBn": "গুদাম সহায়তা",
+      "desc": "Short-term storage and loading/unloading support for your logistics needs.",
+      "descBn": "আপনার লজিস্টিক প্রয়োজনে স্বল্পমেয়াদী সংরক্ষণ ও লোডিং সহায়তা।"
+    },
+    {
+      "icon": "bolt",
+      "title": "Express Delivery",
+      "titleBn": "এক্সপ্রেস ডেলিভারি",
+      "desc": "Time-critical shipments delivered fast with priority handling and tracking.",
+      "descBn": "অগ্রাধিকার ব্যবস্থাপনা ও ট্র্যাকিং সহ দ্রুততম সময়ে জরুরি চালান ডেলিভারি।"
+    }
+  ],
+  "whyChooseUs": [
+    { "icon": "support", "title": "24/7 Support", "titleBn": "২৪/৭ সহায়তা", "desc": "Round-the-clock assistance whenever you need us.", "descBn": "যেকোনো সময় চব্বিশ ঘণ্টা সহায়তা।" },
+    { "icon": "map", "title": "Nationwide Coverage", "titleBn": "সারাদেশে কভারেজ", "desc": "We deliver to every corner of Bangladesh.", "descBn": "বাংলাদেশের প্রতিটি কোণায় আমরা পৌঁছে দিই।" },
+    { "icon": "gps", "title": "GPS Tracking", "titleBn": "জিপিএস ট্র্যাকিং", "desc": "Track your shipment in real-time, anytime.", "descBn": "যেকোনো সময় রিয়েল-টাইমে আপনার চালান ট্র্যাক করুন।" },
+    { "icon": "clock", "title": "On-time Delivery", "titleBn": "সময়মতো ডেলিভারি", "desc": "We respect deadlines and deliver as promised.", "descBn": "আমরা সময়সীমার প্রতি যত্নশীল ও প্রতিশ্রুতি অনুযায়ী পৌঁছে দিই।" }
+  ],
+  "fleet": [
+    { "image": "/images/fleet-covered-van.svg", "name": "Covered Van", "nameBn": "কভার্ড ভ্যান", "capacity": "Up to 3 Ton", "capacityBn": "৩ টন পর্যন্ত", "feature": "Fully enclosed, weatherproof", "featureBn": "সম্পূর্ণ আবদ্ধ, আবহাওয়া-নিরোধক" },
+    { "image": "/images/fleet-large-truck.svg", "name": "Large Truck", "nameBn": "বড় ট্রাক", "capacity": "Up to 10 Ton", "capacityBn": "১০ টন পর্যন্ত", "feature": "Heavy bulk cargo", "featureBn": "ভারী বাল্ক কার্গো" },
+    { "image": "/images/fleet-mini-truck.svg", "name": "Mini Truck", "nameBn": "মিনি ট্রাক", "capacity": "Up to 1.5 Ton", "capacityBn": "১.৫ টন পর্যন্ত", "feature": "City & short routes", "featureBn": "শহর ও স্বল্প দূরত্ব" },
+    { "image": "/images/fleet-pickup.svg", "name": "Pickup", "nameBn": "পিকআপ", "capacity": "Up to 1 Ton", "capacityBn": "১ টন পর্যন্ত", "feature": "Quick small loads", "featureBn": "দ্রুত ছোট চালান" }
+  ],
+  "process": [
+    { "step": "01", "title": "Book", "titleBn": "বুকিং", "desc": "Call or fill the quote form to book a vehicle.", "descBn": "গাড়ি বুক করতে কল করুন বা কোটেশন ফর্ম পূরণ করুন।" },
+    { "step": "02", "title": "Pickup", "titleBn": "পিকআপ", "desc": "Our team arrives at your location on schedule.", "descBn": "আমাদের টিম সময়মতো আপনার লোকেশনে পৌঁছায়।" },
+    { "step": "03", "title": "Transport", "titleBn": "পরিবহন", "desc": "Goods carried safely with GPS-tracked vehicles.", "descBn": "জিপিএস-ট্র্যাকড গাড়িতে পণ্য নিরাপদে পরিবহন।" },
+    { "step": "04", "title": "Delivery", "titleBn": "ডেলিভারি", "desc": "On-time handover at the destination.", "descBn": "গন্তব্যে সময়মতো হস্তান্তর।" }
+  ],
+  "testimonials": [
+    { "name": "Rafiqul Islam", "nameBn": "রফিকুল ইসলাম", "role": "Factory Owner, Narayanganj", "roleBn": "কারখানা মালিক, নারায়ণগঞ্জ", "quote": "ZSM has been moving our raw materials for months. Always on time and very professional.", "quoteBn": "জেড এস এম মাসের পর মাস আমাদের কাঁচামাল পরিবহন করছে। সবসময় সময়মতো ও পেশাদার।" },
+    { "name": "Shahana Akter", "nameBn": "শাহানা আক্তার", "role": "Garments Exporter", "roleBn": "গার্মেন্টস রপ্তানিকারক", "quote": "Their covered vans kept our shipment dry during monsoon. Highly recommended service.", "quoteBn": "বর্ষায় তাদের কভার্ড ভ্যান আমাদের চালান শুকনো রেখেছিল। সেবাটি অত্যন্ত প্রশংসনীয়।" },
+    { "name": "Kamal Hossain", "nameBn": "কামাল হোসেন", "role": "Wholesale Distributor", "roleBn": "পাইকারি পরিবেশক", "quote": "Affordable rates and reliable drivers. ZSM is now our default transport partner.", "quoteBn": "সাশ্রয়ী মূল্য ও নির্ভরযোগ্য চালক। জেড এস এম এখন আমাদের প্রধান পরিবহন অংশীদার।" }
+  ],
+  "clients": [
+    { "name": "Madani Traders", "nameBn": "মাদানী ট্রেডার্স" },
+    { "name": "Siddhirganj Textiles", "nameBn": "সিদ্ধিরগঞ্জ টেক্সটাইল" },
+    { "name": "Doric Industries", "nameBn": "ডরিক ইন্ডাস্ট্রিজ" },
+    { "name": "Padma Distributors", "nameBn": "পদ্মা ডিস্ট্রিবিউটরস" },
+    { "name": "Meghna Foods", "nameBn": "মেঘনা ফুডস" },
+    { "name": "BD Logistics Hub", "nameBn": "বিডি লজিস্টিক হাব" }
+  ],
+  "stats": [
+    { "value": "5000+", "label": "Trips Completed", "labelBn": "সম্পন্ন ট্রিপ" },
+    { "value": "64", "label": "Districts Covered", "labelBn": "জেলা কভারেজ" },
+    { "value": "50+", "label": "Vehicles", "labelBn": "যানবাহন" },
+    { "value": "24/7", "label": "Support", "labelBn": "সহায়তা" }
+  ]
+}
