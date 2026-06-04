@@ -43,7 +43,11 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-4 py-1.5 mb-5 rounded-full bg-brand-yellow/90 text-slate-900 text-xs font-bold tracking-wide animate-fadeIn"
           >
             <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse" />
-            {site.company.slogan} · {site.company.nameBn}
+         <span className={lang === "bn" ? "font-bangla" : "font-display"}>
+  {lang === "bn" ? site.company.sloganBn : site.company.slogan}
+  {" | "} 
+  {lang === "bn" ? site.company.nameBn : site.company.name}
+</span>
           </div>
           <h1
             key={`t-${idx}`}

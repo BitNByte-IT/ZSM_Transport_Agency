@@ -42,7 +42,7 @@ export default function About() {
         <div className={`relative transition-all duration-700 delay-150 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}>
           <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] bg-slate-100 dark:bg-slate-800">
             <img
-              src="/images/hero-van-2.jpg"
+              src="/images/hero-van-4.jpg"
               alt="ZSM covered van fleet"
               className="w-full h-full object-cover"
               onError={(e) => { e.target.style.display = "none"; }}

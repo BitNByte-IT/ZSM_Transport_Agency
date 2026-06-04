@@ -17,10 +17,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{site.company.name} — {site.company.slogan}</title>
-        <meta name="description" content="ZSM Transport Agency — reliable owner-operated covered van logistics across Bangladesh. Based in Siddhirganj, Narayanganj." />
+        <title>{site.company.name} - {site.company.slogan}</title>
+        <meta name="description" content="ZSM Transport Agency | Covered van logistics across Bangladesh." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content={`${site.company.name} — ${site.company.slogan}`} />
+        <meta property="og:title" content={`${site.company.name} - ${site.company.slogan}`} />
         <meta property="og:description" content="Reliable covered van transport across Bangladesh." />
       </Head>
       <Navbar />
