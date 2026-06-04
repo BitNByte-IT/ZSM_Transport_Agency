@@ -104,7 +104,7 @@
     { "icon": "map", "title": "Nationwide Coverage", "titleBn": "সারাদেশে কভারেজ", "desc": "We deliver to every corner of Bangladesh.", "descBn": "বাংলাদেশের প্রতিটি কোণায় আমরা পৌঁছে দিই।" },
     { "icon": "gps", "title": "GPS Tracking", "titleBn": "জিপিএস ট্র্যাকিং", "desc": "Track your shipment in real-time, anytime.", "descBn": "যেকোনো সময় রিয়েল-টাইমে আপনার চালান ট্র্যাক করুন।" },
     { "icon": "clock", "title": "On-time Delivery", "titleBn": "সময়মতো ডেলিভারি", "desc": "We respect deadlines and deliver as promised.", "descBn": "আমরা সময়সীমার প্রতি যত্নশীল ও প্রতিশ্রুতি অনুযায়ী পৌঁছে দিই।" },
-    { "icon": "truck", "title": "Covered Van Fleet", "titleBn": "কভার্ড ভ্যান বহর", "desc": "Owner-operated covered vans for weather-protected, secure cargo delivery across Bangladesh.", "descBn": "আবহাওয়া-নিরোধক ও নিরাপদ পণ্য ডেলিভারির জন্য মালিক-পরিচালিত কভার্ড ভ্যান বহর।" }
+    { "icon": "truck", "title": "Covered Van Fleet", "titleBn": "কভার্ড ভ্যান বহর", "desc": "Covered vans for weather-protected, secure cargo delivery across Bangladesh.", "descBn": "আবহাওয়া-নিরোধক ও নিরাপদ পণ্য ডেলিভারির জন্য কভার্ড ভ্যান বহর।" }
   ],
   "process": [
     { "step": "01", "title": "Book", "titleBn": "বুকিং", "desc": "Call or fill the quote form to book a covered van.", "descBn": "কভার্ড ভ্যান বুক করতে কল করুন বা কোটেশন ফর্ম পূরণ করুন।" },
@@ -122,9 +122,9 @@
     { "name": "Walton", "nameBn": "ওয়ালটন", "logo": "/images/client-walton.png" }
   ],
   "stats": [
-    { "value": "5000+", "label": "Trips Completed", "labelBn": "সম্পন্ন ট্রিপ" },
-    { "value": "64", "label": "Districts Covered", "labelBn": "জেলা কভারেজ" },
-    { "value": "50+", "label": "Vehicles", "labelBn": "যানবাহন" },
-    { "value": "24/7", "label": "Support", "labelBn": "সহায়তা" }
+    { "value": "5000+", "valueBn": "৫০০০+", "label": "Trips Completed", "labelBn": "সম্পন্ন ট্রিপ" },
+    { "value": "64", "valueBn": "৬৪", "label": "Districts Covered", "labelBn": "জেলা কভারেজ" },
+    { "value": "50+",   "valueBn": "৫০+", "label": "Vehicles", "labelBn": "যানবাহন" },
+    { "value": "24/7", "valueBn": "২৪/৭", "label": "Support", "labelBn": "সহায়তা" }
   ]
 }

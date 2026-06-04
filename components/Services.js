@@ -14,7 +14,7 @@ export default function Services() {
       <div className="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-brand-blue/5 blur-3xl" />
       <div className="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-brand-green/5 blur-3xl" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
-        <SectionHeading eyebrow={site.company.slogan} title={t("ourServices")} subtitle={t("servicesSub")} />
+        <SectionHeading eyebrow='' title={t("ourServices")} subtitle={t("servicesSub")} />
         <div ref={ref} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {site.services.map((s, i) => (
             <div

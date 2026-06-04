@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
                 className={`text-center text-white transition-all duration-700 ${svisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
                 style={{ transitionDelay: `${i * 120}ms` }}
               >
-                <div className="text-4xl sm:text-5xl font-extrabold mb-1 drop-shadow">{stat.value}</div>
+                <div className="text-4xl sm:text-5xl font-extrabold mb-1 drop-shadow">   {bn ? stat.valueBn : stat.value}</div>
                 <div className={`text-sm font-medium text-white/90 ${bn ? "font-bangla" : ""}`}>{tx(stat, "label")}</div>
               </div>
             ))}
