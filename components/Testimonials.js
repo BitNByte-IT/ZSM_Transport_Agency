@@ -12,7 +12,7 @@ export default function Testimonials() {
   return (
     <section className="py-20 sm:py-28 bg-slate-50 dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <SectionHeading eyebrow={t("testimonials")} title={t("testimonials")} subtitle={t("testimonialsSub")} />
+        <SectionHeading eyebrow={t("")} title={t("testimonials")} subtitle={t("testimonialsSub")} />
         <div ref={ref} className="grid md:grid-cols-3 gap-6">
           {site.testimonials.map((tm, i) => (
             <div

@@ -65,7 +65,7 @@ export default function Contact() {
                 className={`w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold bg-brand-blue text-white hover:bg-brand-blueLight disabled:opacity-60 transition-all hover:scale-[1.01] shadow-lg ${bn ? "font-bangla" : ""}`}
               >
                 {status === "sending" ? t("formSending") : t("formSubmit")}
-                {status !== "sending" && <Icon name="arrow" className="w-5 h-5" />}
+                {status !== "sending" && <Icon name="telegram" className="w-5 h-5" />}
               </button>
 
               {status === "success" && (

@@ -27,6 +27,11 @@ export default function Footer() {
     { href: site.social.google, icon: "google", label: "Google Business" },
   ];
 
+  const currentYear = new Date().getFullYear();
+
+const toBanglaNumber = (num) =>
+  num.toString().replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[d]);
+
   return (
     <footer className="bg-slate-950 text-slate-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14 grid gap-10 md:grid-cols-3">
@@ -89,7 +94,10 @@ export default function Footer() {
       {/* Copyright bar */}
       <div className="border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-400">
-          <span className={bn ? "font-bangla" : ""}>© {new Date().getFullYear()} {t("rightsReserved")}.</span>
+          {/* <span className={bn ? "font-bangla" : ""}>© {new Date().getFullYear()} {t("rightsReserved")}.</span> */}
+          <span className={bn ? "font-bangla" : ""}>
+  © {bn ? toBanglaNumber(currentYear) : currentYear} {t("rightsReserved")}.
+</span>
           <span className="font-semibold text-slate-300">{t("poweredBy")}</span>
         </div>
       </div>

@@ -36,10 +36,10 @@
   "workingHours": [
     { "day": "Saturday - Thursday", "dayBn": "শনিবার - বৃহস্পতিবার", "time": "8:00 AM - 8:00 PM", "timeBn": "সকাল ৮টা - রাত ৮টা" },
     { "day": "Friday", "dayBn": "শুক্রবার", "time": "Closed (On-call only)", "timeBn": "বন্ধ (শুধু জরুরি কল)" },
-    { "day": "Emergency Support", "dayBn": "জরুরি সহায়তা", "time": "24/7 Available", "timeBn": "২৪/৭ উপলব্ধ" }
+    { "day": "Emergency Support", "dayBn": "জরুরি সহায়তা", "time": "24/7 Available", "timeBn": "২৪/৭ সেবার জন্য প্রস্তুত" }
   ],
   "social": {
-    "facebook": "https://www.facebook.com/zsmtransportagency",
+    "facebook": "",
     "google": "",
     "whatsapp": "https://wa.me/8801922552100"
   },
@@ -125,7 +125,7 @@
   ],
   "clients": [
     { "name": "Singer Beko", "nameBn": "সিঙ্গার বেকো", "logo": "/images/client-singer-beko.png" },
-    { "name": "Walton", "nameBn": "ওয়ালটন", "logo": "/images/client-walton.png" }
+    { "name": "Walton", "nameBn": "ওয়ালটন", "logo": "/images/client-walton.jpg" }
   ],
   "stats": [
     { "value": "2000+", "valueBn": "২০০০+", "label": "Trips Completed", "labelBn": "সম্পন্ন ট্রিপ" },

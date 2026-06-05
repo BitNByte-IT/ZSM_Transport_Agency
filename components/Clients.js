@@ -11,7 +11,7 @@ export default function Clients() {
   return (
     <section className="py-20 sm:py-24 bg-slate-50 dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <SectionHeading eyebrow={t("ourClients")} title={t("ourClients")} subtitle={t("clientsSub")} />
+        <SectionHeading eyebrow={t("")} title={t("ourClients")} subtitle={t("clientsSub")} />
 
         <div ref={ref} className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-4">
           {site.clients.map((c, i) => (
