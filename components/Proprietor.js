@@ -77,7 +77,7 @@ export default function Proprietor() {
   </a>
 
   {/* Social Icons */}
-  <div className="flex items-center justify-center gap-3 pt-3">
+  {/* <div className="flex items-center justify-center gap-3 pt-3">
     <a
       href={p.facebook}
       target="_blank"
@@ -97,12 +97,12 @@ export default function Proprietor() {
     >
       <Icon name="linkedin" className="w-4 h-4" />
     </a>
-  </div>
+  </div> */}
 </div>
 
               {/* Decorative ring */}
-              <div className="absolute top-6 left-6 w-16 h-16 rounded-full border-2 border-brand-blue/10 dark:border-brand-blueLight/10 opacity-60" />
-              <div className="absolute bottom-8 right-6 w-10 h-10 rounded-full border-2 border-brand-green/20 dark:border-brand-greenLight/20 opacity-60" />
+              <div className="absolute top-16 left-6 w-16 h-16 rounded-full border-2 border-brand-blue/10 dark:border-brand-blueLight/10 opacity-60" />
+              {/* <div className="absolute bottom-6 right-5 w-10 h-10 rounded-full border-2 border-brand-green/20 dark:border-brand-greenLight/20 opacity-60" /> */}
             </div>
 
             {/* Info column */}

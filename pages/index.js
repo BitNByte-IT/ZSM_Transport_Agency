@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{site.company.name} - {site.company.slogan}</title>
+        <title>{site.company.name} - Safe , Reliable & On Time</title>
         <meta name="description" content="ZSM Transport Agency | Covered van logistics across Bangladesh." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content={`${site.company.name} - ${site.company.slogan}`} />
@@ -32,7 +32,7 @@ export default function Home() {
         <Proprietor />
         <Process />
         <Testimonials />
-        <Clients />
+        {/* <Clients /> */}
         <Contact />
       </main>
       <Footer />
