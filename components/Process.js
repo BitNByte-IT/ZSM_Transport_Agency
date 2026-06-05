@@ -12,7 +12,7 @@ export default function Process() {
     <section id="process" className="py-20 sm:py-28 bg-gradient-to-b from-brand-blue to-[#082a5e] relative overflow-hidden">
       <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 20% 30%, white 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
-        <SectionHeading eyebrow={t("process")} title={t("process")} subtitle={t("processSub")} light />
+        <SectionHeading eyebrow={t("")} title={t("process")} subtitle={t("processSub")} light />
         <div ref={ref} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
           {site.process.map((p, i) => (
             <div

@@ -15,6 +15,11 @@
     "designation": "Chief Executive Officer (CEO)",
     "designationBn": "প্রধান নির্বাহী কর্মকর্তা (সিইও)",
     "image": "/images/proprietor.jpg",
+     "email": "zsmtransportagency@gmail.com",
+  "phone": "01922552100",
+  "phoneDisplay": "+880-1922-552100",
+  "facebook": "https://www.facebook.com/zm.masum.31",
+  "linkedin": "https://linkedin.com",
     "bio": "Founder and CEO of ZSM Transport Agency, Z. M. Masum established the company with a vision to provide reliable and professional covered van transport services across Bangladesh. As the owner and operator, he personally oversees every delivery commitment - ensuring clients always receive the highest standard of service.",
     "bioBn": "জেড এস এম ট্রান্সপোর্ট এজেন্সীর প্রতিষ্ঠাতা ও প্রধান নির্বাহী কর্মকর্তা জেড. এম. মাসুম সারা বাংলাদেশে নির্ভরযোগ্য ও পেশাদার কভার্ড ভ্যান পরিবহন সেবা প্রদানের লক্ষ্য নিয়ে প্রতিষ্ঠানটি প্রতিষ্ঠা করেছেন। মালিক ও পরিচালক হিসেবে তিনি প্রতিটি ডেলিভারি প্রতিশ্রুতি ব্যক্তিগতভাবে তদারকি করেন - নিশ্চিত করেন যে গ্রাহকরা সর্বদা সর্বোচ্চ মানের সেবা পান।"
   },
@@ -108,7 +113,7 @@
     { "icon": "truck", "title": "Covered Van Fleet", "titleBn": "কভার্ড ভ্যান বহর", "desc": "Covered vans for weather-protected, secure cargo delivery across Bangladesh.", "descBn": "আবহাওয়া-নিরোধক ও নিরাপদ পণ্য ডেলিভারির জন্য কভার্ড ভ্যান বহর।" }
   ],
   "process": [
-    { "step": "01", "title": "Book", "titleBn": "বুকিং", "desc": "Call or fill the quote form to book a covered van.", "descBn": "কভার্ড ভ্যান বুক করতে কল করুন বা কোটেশন ফর্ম পূরণ করুন।" },
+    { "step": "01", "title": "Book", "titleBn": "বুকিং", "desc": "Call or fill the form to book a covered van.", "descBn": "কভার্ড ভ্যান বুক করতে কল করুন বা বুকিং ফর্ম পূরণ করুন।" },
     { "step": "02", "title": "Pickup", "titleBn": "পিকআপ", "desc": "Our team arrives at your location on schedule.", "descBn": "আমাদের টিম সময়মতো আপনার লোকেশনে পৌঁছায়।" },
     { "step": "03", "title": "Transport", "titleBn": "পরিবহন", "desc": "Goods carried safely in GPS-tracked covered vans.", "descBn": "জিপিএস-ট্র্যাকড কভার্ড ভ্যানে পণ্য নিরাপদে পরিবহন।" },
     { "step": "04", "title": "Delivery", "titleBn": "ডেলিভারি", "desc": "On-time professional handover at the destination.", "descBn": "গন্তব্যে সময়মতো পেশাদার হস্তান্তর।" }

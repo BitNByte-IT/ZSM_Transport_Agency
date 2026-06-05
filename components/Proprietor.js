@@ -56,6 +56,49 @@ export default function Proprietor() {
                   CEO
                 </div>
               </div>
+              {/* Contact & Social */}
+<div className="mt-8 w-full flex flex-col gap-2">
+  {/* Call */}
+  <a
+    href={`tel:${p.phone}`}
+    className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-200 hover:text-brand-blue transition"
+  >
+    <Icon name="phone" className="w-4 h-4" />
+    <span>{p.phoneDisplay}</span>
+  </a>
+
+  {/* Email */}
+  <a
+    href={`mailto:${p.email}`}
+    className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-200 hover:text-brand-blue transition break-all"
+  >
+    <Icon name="mail" className="w-4 h-4" />
+    <span>{p.email}</span>
+  </a>
+
+  {/* Social Icons */}
+  <div className="flex items-center justify-center gap-3 pt-3">
+    <a
+      href={p.facebook}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center hover:scale-110 transition"
+      aria-label="Facebook"
+    >
+      <Icon name="facebook" className="w-4 h-4" />
+    </a>
+
+    <a
+      href={p.linkedin}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-9 h-9 rounded-full bg-sky-700 text-white flex items-center justify-center hover:scale-110 transition"
+      aria-label="LinkedIn"
+    >
+      <Icon name="linkedin" className="w-4 h-4" />
+    </a>
+  </div>
+</div>
 
               {/* Decorative ring */}
               <div className="absolute top-6 left-6 w-16 h-16 rounded-full border-2 border-brand-blue/10 dark:border-brand-blueLight/10 opacity-60" />
