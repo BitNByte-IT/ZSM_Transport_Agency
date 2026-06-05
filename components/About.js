@@ -9,7 +9,7 @@ export default function About() {
   const bn = lang === "bn";
 
   const points = [
-    { en: "Licensed Transport Agency Owner", bn: "লাইসেন্সপ্রাপ্ত পরিবহন এজেন্সী মালিক" },
+    { en: "Licensed Transport Agency", bn: "লাইসেন্সপ্রাপ্ত পরিবহন এজেন্সী" },
     { en: "Trade License: " + site.company.tradeLicense, bn: "ট্রেড লাইসেন্স: " + site.company.tradeLicense },
     { en: "Based in Narayanganj, serving nationwide", bn: "নারায়ণগঞ্জ ভিত্তিক, সারাদেশে সেবা" },
     { en: "Transparent pricing & safe handling", bn: "স্বচ্ছ মূল্য ও নিরাপদ ব্যবস্থাপনা" },
@@ -59,7 +59,7 @@ export default function About() {
                 <Icon name="truck" className="w-6 h-6" />
               </div>
               <div>
-                <div className="text-2xl font-extrabold text-slate-900 dark:text-white leading-none">{site.company.establishedYear}</div>
+                <div className="text-2xl font-extrabold text-slate-900 dark:text-white leading-none">{bn ? `${site.company.establishedYearBn}` : `${site.company.establishedYear}`}</div>
                 <div className={`text-xs text-slate-500 dark:text-slate-400 ${bn ? "font-bangla" : ""}`}>{bn ? "প্রতিষ্ঠিত" : "Established"}</div>
               </div>
             </div>

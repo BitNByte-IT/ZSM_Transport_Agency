@@ -6,7 +6,8 @@
     "sloganBn": "নিরাপদ, নির্ভরযোগ্য, সঠিক সময়ে",
     "owner": "Z. M. Masum",
     "tradeLicense": "TRAD/NCC/0000769/2025",
-    "establishedYear": "2025"
+    "establishedYear": "2025",
+    "establishedYearBn": "২০২৫"
   },
   "proprietor": {
     "name": "ZM Masum",
@@ -15,7 +16,7 @@
     "designationBn": "প্রধান নির্বাহী কর্মকর্তা (সিইও)",
     "image": "/images/proprietor.jpg",
     "bio": "Founder and CEO of ZSM Transport Agency, Z. M. Masum established the company with a vision to provide reliable and professional covered van transport services across Bangladesh. As the owner and operator, he personally oversees every delivery commitment - ensuring clients always receive the highest standard of service.",
-    "bioBn": "জেড এস এম ট্রান্সপোর্ট এজেন্সীর প্রতিষ্ঠাতা ও প্রধান নির্বাহী কর্মকর্তা জেড. এম. মাসুম সারাবাংলাদেশে নির্ভরযোগ্য ও পেশাদার কভার্ড ভ্যান পরিবহন সেবা প্রদানের লক্ষ্য নিয়ে প্রতিষ্ঠানটি প্রতিষ্ঠা করেছেন। মালিক ও পরিচালক হিসেবে তিনি প্রতিটি ডেলিভারি প্রতিশ্রুতি ব্যক্তিগতভাবে তদারকি করেন - নিশ্চিত করেন যে গ্রাহকরা সর্বদা সর্বোচ্চ মানের সেবা পান।"
+    "bioBn": "জেড এস এম ট্রান্সপোর্ট এজেন্সীর প্রতিষ্ঠাতা ও প্রধান নির্বাহী কর্মকর্তা জেড. এম. মাসুম সারা বাংলাদেশে নির্ভরযোগ্য ও পেশাদার কভার্ড ভ্যান পরিবহন সেবা প্রদানের লক্ষ্য নিয়ে প্রতিষ্ঠানটি প্রতিষ্ঠা করেছেন। মালিক ও পরিচালক হিসেবে তিনি প্রতিটি ডেলিভারি প্রতিশ্রুতি ব্যক্তিগতভাবে তদারকি করেন - নিশ্চিত করেন যে গ্রাহকরা সর্বদা সর্বোচ্চ মানের সেবা পান।"
   },
   "contact": {
     "phonePrimary": "01922552100",
@@ -122,9 +123,9 @@
     { "name": "Walton", "nameBn": "ওয়ালটন", "logo": "/images/client-walton.png" }
   ],
   "stats": [
-    { "value": "5000+", "valueBn": "৫০০০+", "label": "Trips Completed", "labelBn": "সম্পন্ন ট্রিপ" },
+    { "value": "2000+", "valueBn": "২০০০+", "label": "Trips Completed", "labelBn": "সম্পন্ন ট্রিপ" },
     { "value": "64", "valueBn": "৬৪", "label": "Districts Covered", "labelBn": "জেলা কভারেজ" },
-    { "value": "50+",   "valueBn": "৫০+", "label": "Vehicles", "labelBn": "যানবাহন" },
+    { "value": "30+",   "valueBn": "৩০+", "label": "Vehicles", "labelBn": "যানবাহন" },
     { "value": "24/7", "valueBn": "২৪/৭", "label": "Support", "labelBn": "সহায়তা" }
   ]
 }

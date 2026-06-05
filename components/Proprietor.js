@@ -83,7 +83,7 @@ export default function Proprietor() {
                     <Icon name="check" className="w-4 h-4" />
                   </span>
                   <span className={`text-sm font-medium text-slate-700 dark:text-slate-200 ${bn ? "font-bangla" : ""}`}>
-                    {bn ? "মালিক ও পরিচালক" : "Owner & Operator"} — {bn ? site.company.nameBn : site.company.name}
+                    {bn ? "প্রতিষ্ঠাতা ও স্বত্বাধিকারী" : "Founder & Owner"} - {bn ? site.company.nameBn : site.company.name}
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -99,7 +99,7 @@ export default function Proprietor() {
                     <Icon name="check" className="w-4 h-4" />
                   </span>
                   <span className={`text-sm font-medium text-slate-700 dark:text-slate-200 ${bn ? "font-bangla" : ""}`}>
-                    {bn ? "প্রতিষ্ঠিত: " : "Established: "}{site.company.establishedYear}
+                    {bn ? "প্রতিষ্ঠিত: " : "Established: "}{ bn ? `${site.company.establishedYearBn}`: `${site.company.establishedYear}`}
                   </span>
                 </div>
               </div>
