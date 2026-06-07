@@ -98,7 +98,17 @@ const toBanglaNumber = (num) =>
           <span className={bn ? "font-bangla" : ""}>
   © {bn ? toBanglaNumber(currentYear) : currentYear} {t("rightsReserved")}.
 </span>
-          <span className="font-semibold text-slate-300">{t("poweredBy")}</span>
+   
+          <a
+  href="https://bitnbyteit.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block"
+>
+  <span className="font-semibold bg-gradient-to-r from-blue-500 to-orange-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+    {t("poweredBy")}
+  </span>
+</a>
         </div>
       </div>
     </footer>
