@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const { name, phone, email, service, message } = req.body || {};
+  const { name, phone, email, service, category, message } = req.body || {};
 
   if (!name || !phone) {
     return res.status(400).json({ error: "Name and phone are required" });
@@ -22,7 +22,7 @@ export default async function handler(req, res) {
 
   if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
     // In dev without SMTP configured, log and still succeed so UI can be tested.
-    console.log("[contact] SMTP not configured. Submission:", { name, phone, email, service, message });
+    console.log("[contact] SMTP not configured. Submission:", { name, phone, email, service, category, message });
     return res.status(200).json({ ok: true, note: "SMTP not configured — logged only" });
   }
 
@@ -43,7 +43,8 @@ export default async function handler(req, res) {
           <p><strong>Name:</strong> ${escapeHtml(name)}</p>
           <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
           <p><strong>Email:</strong> ${escapeHtml(email || "—")}</p>
-          <p><strong>Service:</strong> ${escapeHtml(service || "—")}</p>
+          <p><strong>Service Requested:</strong> ${escapeHtml(service || "—")}</p>
+          <p><strong>Product Category:</strong> ${escapeHtml(category || "—")}</p>
           <p><strong>Message:</strong><br/>${escapeHtml(message || "—").replace(/\n/g, "<br/>")}</p>
         </div>
         <div style="background:#f1f5f9;padding:12px 24px;font-size:12px;color:#64748b">
@@ -56,7 +57,7 @@ export default async function handler(req, res) {
       to: MAIL_TO || SMTP_USER,
       replyTo: email || undefined,
       subject: `New Quote Request from ${name}`,
-      text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nService: ${service}\nMessage: ${message}`,
+      text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nService: ${service}\nProduct Category: ${category}\nMessage: ${message}`,
       html,
     });
 
