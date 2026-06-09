@@ -60,7 +60,7 @@ export default function Contact() {
               <select name="category" value={form.category} onChange={onChange} required className={`${inputCls} ${bn ? "font-bangla" : ""}`}>
                 <option value="">{t("selectCategory")}</option>
                 {site.productCategories.map((cat, i) => (
-                  <option key={i} value={cat.name}>{tx(cat, "name")}</option>
+                  <option key={i} value={tx(cat, "name")}>{tx(cat, "name")}</option>
                 ))}
               </select>
               <textarea name="message" value={form.message} onChange={onChange} rows={4} placeholder={t("formMessage")} className={`${inputCls} resize-none ${bn ? "font-bangla" : ""}`} />
