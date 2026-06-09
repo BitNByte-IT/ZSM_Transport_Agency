@@ -11,35 +11,6 @@ export default function Contact() {
   const [mapRef, mapVisible] = useReveal();
   const bn = lang === "bn";
 
-  const productCategories = [
-    "Furniture & Home Furnishings",
-    "Garments & Textiles",
-    "Groceries & Packaged Food",
-    "Electronics & Appliances",
-    "Household Goods",
-    "Agricultural Products",
-    "Dairy Products",
-    "Beverages",
-    "Raw Materials",
-    "Metals & Steel",
-    "Timber & Wood",
-    "Construction Materials (Cement)",
-    "Machinery & Equipment",
-    "Auto Parts & Vehicles",
-    "Medicine & Pharmaceuticals",
-    "Chemicals",
-    "Hazardous Materials (Flammable, Toxic, etc.)",
-    "Petroleum & Fuel",
-    "Gas Cylinders",
-    "Paper & Packaging Materials",
-    "Plastics & Rubber",
-    "Glass & Ceramics",
-    "Documents & Parcels (Courier)",
-    "Fragile Items",
-    "Oversized / Heavy Cargo",
-    "Waste & Recyclables",
-  ];
-
   const [form, setForm] = useState({ name: "", phone: "", email: "", service: "", category: "", message: "" });
   const [status, setStatus] = useState("idle");
 
@@ -86,10 +57,10 @@ export default function Contact() {
                   <option key={i} value={tx(s, "title")}>{tx(s, "title")}</option>
                 ))}
               </select>
-              <select name="category" value={form.category} onChange={onChange} required className={inputCls}>
-                <option value="">Product Category to be Delivered</option>
-                {productCategories.map((cat, i) => (
-                  <option key={i} value={cat}>{cat}</option>
+              <select name="category" value={form.category} onChange={onChange} required className={`${inputCls} ${bn ? "font-bangla" : ""}`}>
+                <option value="">{t("selectCategory")}</option>
+                {site.productCategories.map((cat, i) => (
+                  <option key={i} value={cat.name}>{tx(cat, "name")}</option>
                 ))}
               </select>
               <textarea name="message" value={form.message} onChange={onChange} rows={4} placeholder={t("formMessage")} className={`${inputCls} resize-none ${bn ? "font-bangla" : ""}`} />

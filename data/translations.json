@@ -40,6 +40,7 @@
     "termsConditions": "Terms & Conditions",
     "backHome": "Back to Home",
     "selectService": "Select a service",
+    "selectCategory": "Product Category to be Delivered",
     "callUs": "Call Us",
     "emailUs": "Email Us",
     "visitUs": "Visit Us"
@@ -85,6 +86,7 @@
     "termsConditions": "শর্তাবলী",
     "backHome": "হোমে ফিরুন",
     "selectService": "একটি সেবা নির্বাচন করুন",
+    "selectCategory": "ডেলিভারির পণ্যের ধরন নির্বাচন করুন",
     "callUs": "কল করুন",
     "emailUs": "ইমেইল করুন",
     "visitUs": "আমাদের ঠিকানা"
