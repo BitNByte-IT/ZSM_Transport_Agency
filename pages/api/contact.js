@@ -20,6 +20,7 @@ export default async function handler(req, res) {
     MAIL_TO,
   } = process.env;
 
+  console.log("SMTP check:", !!SMTP_HOST, !!SMTP_USER, !!SMTP_PASS, !!SMTP_PORT);
   if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
     // In dev without SMTP configured, log and still succeed so UI can be tested.
     console.log("[contact] SMTP not configured. Submission:", { name, phone, email, service, category, message });
@@ -64,7 +65,8 @@ export default async function handler(req, res) {
     return res.status(200).json({ ok: true });
   } catch (err) {
     console.error("[contact] send error:", err);
-    return res.status(500).json({ error: "Failed to send" });
+    // return res.status(500).json({ error: "Failed to send" });
+      return res.status(500).json({ error: err.message }); // expose it temporarily
   }
 }
 
