@@ -76,6 +76,17 @@ export default function Proprietor() {
     <span>{p.email}</span>
   </a>
 
+  {/* Website */}
+  <a
+    href={`https://${p.website}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-200 hover:text-brand-blue transition break-all"
+  >
+    <Icon name="globe" className="w-4 h-4" />
+    <span>{p.website}</span>
+  </a>
+
   {/* Social Icons */}
   {/* <div className="flex items-center justify-center gap-3 pt-3">
     <a
