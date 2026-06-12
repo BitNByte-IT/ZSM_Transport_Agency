@@ -51,6 +51,15 @@ const toBanglaNumber = (num) =>
             <a href={`mailto:${site.contact.email}`} className="flex items-center gap-2 hover:text-white transition">
               <Icon name="mail" className="w-4 h-4 text-brand-blueLight" /> {site.contact.email}
             </a>
+              <a
+                href={`https://${site.proprietor.website}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-white transition"
+              >
+                <Icon name="globe" className="w-4 h-4 text-brand-blueLight" />
+                <span>{site.proprietor.website}</span>
+              </a>
           </div>
         </div>
 
